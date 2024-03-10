@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Notifier</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3
+    /dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="favicon.png">
+    <script
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3
+    /dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body onload="load()">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-app-indicator"></i>
+                Notifier
+              </a>          
+        </div>
+      </nav>
+      <button type="button" class="btn btn-dark" id="notificationEnableBtn">Enable Notification</button>
+
+      <div class="container-lg mt-5" data-bs-theme="dark">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Donot sit for long</h5>
+              <p class="card-text">Remind me to walk every 20 minutes</p>
+              <button id="walkTimer" class="btn btn-primary">Activate</button>
+            </div>
+          </div>          
+        
+      </div>
+
+
+     <!-- Toast -->
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="bootstraptoast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <strong class="me-auto">Notification</strong>
+            <small>Just now...</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Timer started!
+          </div>
+        </div>
+      </div>      
+</body>
+</html>
+
